@@ -7,9 +7,9 @@ import os
 print("Welcome to the Dice Rolling Simulator v.2")
 print("")
 print("Would you like to roll the dice?")
-qtn = sys.stdin.readline()
+qtn = input("Would you like to roll the dice? ")
 
-if qtn == "y" or "yes":
+if qtn in ['y', 'Y', 'yes', 'Yes', 'YES']:
     dice = random.sample([1, 2, 3, 4, 5, 6], 1)
     print(dice)
 else:
